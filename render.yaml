@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: remotion-studio
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3000"
+      - key: RENDER_CONCURRENCY
+        value: "1"
