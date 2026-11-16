@@ -1,0 +1,8 @@
+node_modules
+dist
+.remotion
+renders
+.env
+.env.*
+!.env.example
+.DS_Store
